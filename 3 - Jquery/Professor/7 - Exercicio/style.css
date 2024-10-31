@@ -1,0 +1,30 @@
+ body {
+     font-family: Arial, sans-serif;
+     display: flex;
+     justify-content: space-around;
+     padding: 20px;
+ }
+
+ h2 {
+     color: #333;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     max-width: 300px;
+     margin-bottom: 20px;
+ }
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ li {
+     background-color: #f0f0f0;
+     margin: 5px 0;
+     padding: 10px;
+     border-radius: 4px;
+ }

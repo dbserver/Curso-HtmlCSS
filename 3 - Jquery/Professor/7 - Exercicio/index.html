@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div id="post-section">
+        <h2>Gerenciamento de Posts</h2>
+        <form id="post-form">
+            <label>Post ID: <input type="number" id="postId" required></label>
+            <label>Título: <input type="text" id="postTitle" required></label>
+            <label>Corpo: <textarea id="postBody" required></textarea></label>
+            <button type="button" id="createPost">Criar Post</button>
+            <button type="button" id="updatePost">Atualizar Post</button>
+            <button type="button" id="deletePost">Excluir Post</button>
+        </form>
+        <ul id="postList"></ul>
+    </div>
+
+    <div id="comment-section">
+        <h2>Gerenciamento de Comentários</h2>
+        <form id="comment-form">
+            <label>Comment ID: <input type="number" id="commentId" required></label>
+            <label>Post ID: <input type="number" id="commentPostId" required></label>
+            <label>Nome: <input type="text" id="commentName" required></label>
+            <label>Email: <input type="email" id="commentEmail" required></label>
+            <label>Corpo: <textarea id="commentBody" required></textarea></label>
+            <button type="button" id="createComment">Criar Comentário</button>
+            <button type="button" id="updateComment">Atualizar Comentário</button>
+            <button type="button" id="deleteComment">Excluir Comentário</button>
+        </form>
+        <ul id="commentList"></ul>
+    </div>
+</body>
+
+</html>
