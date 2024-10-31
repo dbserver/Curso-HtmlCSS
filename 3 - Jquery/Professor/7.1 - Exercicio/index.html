@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div id="product-section">
+        <h2>Gerenciamento de Produtos</h2>
+        <form id="product-form">
+            <input type="hidden" id="productId">
+            <label>SKU: <input type="text" id="sku" required></label>
+            <label>Título: <input type="text" id="title" required></label>
+            <label>Descrição: <input type="text" id="description" required></label>
+            <label>Preço: <input type="number" id="price" required></label>
+            <label>Quantidade: <input type="number" id="quantity" required></label>
+            <button type="button" id="createProduct">Criar Produto</button>
+            <button type="button" id="updateProduct">Atualizar Produto</button>
+            <button type="button" id="deleteProduct">Excluir Produto</button>
+        </form>
+        <ul id="productList"></ul>
+    </div>
+</body>
+
+</html>
